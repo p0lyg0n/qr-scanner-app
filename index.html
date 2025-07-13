@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高速QRコードスキャナー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>高速QRコードスキャナー</h1>
+
+    <div class="controls">
+        <label for="cameraSelection">カメラを選択:</label>
+        <select id="cameraSelection"></select>
+    </div>
+
+    <div class="container">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="output">
+        <p>QRコードをスキャンしてください...</p>
+        <div id="outputMessage"></div>
+        <div id="outputData"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async src="https://docs.opencv.org/master/opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.1.0/dist/jsQR.min.js"></script>
+</body>
+</html>

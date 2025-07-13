@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #282c34;
+    color: #e0e0e0;
+}
+
+h1 {
+    color: #61dafb;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.controls label {
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.controls select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #61dafb;
+    background-color: #3a3f47;
+    color: #e0e0e0;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.controls select:focus {
+    outline: none;
+    border-color: #21a1f1;
+    box-shadow: 0 0 0 2px rgba(33, 161, 241, 0.5);
+}
+
+.container {
+    position: relative;
+    width: 640px; /* Adjust as needed */
+    height: 480px; /* Adjust as needed */
+    background-color: #000;
+    border: 2px solid #61dafb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#output {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #3a3f47;
+    border-radius: 8px;
+    width: 640px; /* Match container width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#output p {
+    font-size: 1.1em;
+    color: #bbb;
+}
+
+#outputMessage {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+#outputData {
+    font-size: 1.5em;
+    color: #aaffaa;
+    word-wrap: break-word;
+}
